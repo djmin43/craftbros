@@ -1,9 +1,10 @@
 import React from "react";
 import KakaoMap from "./KakaoMap";
+import styles from "./Main.module.css";
 
 const Main = () => {
   return (
-    <div>
+    <div className={styles.main}>
       main
       <KakaoMap />
     </div>
