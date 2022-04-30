@@ -4,10 +4,16 @@ import styles from "./Main.module.css";
 
 const Main = () => {
   return (
-    <div className={styles.main}>
-      main
-      <KakaoMap />
-    </div>
+    <section className={styles.main}>
+      <header className={styles.header}>
+        <p>CRAFTBROS</p>
+        <p>BEER MAP</p>
+      </header>
+
+      <div className={styles.mapContainer}>
+        <KakaoMap />
+      </div>
+    </section>
   );
 };
 

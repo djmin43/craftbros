@@ -13,7 +13,7 @@ const KakaoMap = () => {
     kakao.maps.load(function () {
       const options = {
         center: new kakao.maps.LatLng(37.5559, 126.9723),
-        level: 9,
+        level: 10,
       };
       const map = new kakao.maps.Map(mapContainer.current, options);
 
@@ -76,7 +76,7 @@ const InfoWindow = ({
   storeLink,
 }: InfoWindowProps) => {
   return (
-    <section style={{ padding: "0.5rem", fontSize: "12px" }}>
+    <section style={{ padding: "0.5rem 0.5rem 2rem 0.5rem", fontSize: "12px" }}>
       <Link href={storeLink} passHref>
         <a>
           <p>{storeName}</p>
