@@ -1,6 +1,21 @@
-.map {
-  width: 10rem;
-  height: 10rem;
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.map {
+  width: 20rem;
+  height: 20rem;
   border: 1px solid black;
+}
+
+/* larger screen */
+@media only screen and (min-width: 768px) {
+  .map {
+    width: 40rem;
+    height: 40rem;
+    border: 1px solid rgb(113, 93, 93);
+  }
 }
