@@ -13,6 +13,7 @@ const KakaoMap = () => {
         level: 3,
       };
       new kakao.maps.Map(mapContainer.current, options);
+
     });
   }, []);
 
