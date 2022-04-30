@@ -1,33 +1,9 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import styles from "./Main.module.css";
 import { useRef, useEffect } from "react";
 import ReactDomServer from "react-dom/server";
 import Link from "next/link";
-
-interface StoreInfo {
-  title: string;
-  lat: number;
-  lng: number;
-  description: string;
-  storeId: number;
-}
-
-const storeList: StoreInfo[] = [
-  {
-    title: "브릭하우스76",
-    lat: 37.6027028,
-    lng: 126.9160588,
-    description: "추가내용을 입력해주세요",
-    storeId: 27300595,
-  },
-  {
-    title: "크래프트브로스 서래",
-    lat: 37.4559,
-    lng: 126.9723,
-    description: "추가내용을 입력해주세요",
-    storeId: 24712107,
-  },
-];
+import { storeList, StoreInfo } from "./storeList";
 
 const KakaoMap = () => {
   const mapContainer = useRef(null);
@@ -100,14 +76,15 @@ const InfoWindow = ({
   storeLink,
 }: InfoWindowProps) => {
   return (
-    <div className={styles.sample}>
+    <section style={{ padding: "0.5rem", fontSize: "12px" }}>
       <Link href={storeLink} passHref>
         <a>
           <p>{storeName}</p>
           <p>링크클릭</p>
+          <p>{storeDescription} </p>
         </a>
       </Link>
-    </div>
+    </section>
   );
 };
 
