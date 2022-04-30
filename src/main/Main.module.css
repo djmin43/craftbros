@@ -3,12 +3,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 36px;
+}
+
+.mapContainer {
+  margin: 1rem;
 }
 
 .map {
-  width: 20rem;
-  height: 20rem;
-  border: 1px solid black;
+  width: 17.5rem;
+  height: 17.5rem;
 }
 
 /* larger screen */
