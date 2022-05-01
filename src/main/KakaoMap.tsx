@@ -79,7 +79,7 @@ const InfoWindow = ({
     <section style={{ padding: "0.5rem 0.5rem 2rem 0.5rem", fontSize: "12px" }}>
       <Link href={storeLink} passHref>
         <a>
-          <button style={{ backgroundColor: "blue" }}>카카오맵열기</button>
+          <button>카카오맵열기</button>
         </a>
       </Link>
       <p>{storeName}</p>
